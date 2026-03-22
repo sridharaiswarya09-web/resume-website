@@ -178,3 +178,57 @@ section {
     color: white;
     text-decoration: none;
 }
+/* SIDE NAV TABS */
+.side-nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* TAB BUTTONS */
+.side-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    text-align: center;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* HOVER EFFECT */
+.side-nav a:hover {
+    background: #38bdf8;
+    color: black;
+    transform: scale(1.05);
+}/* SIDE NAV TABS */
+.side-nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* TAB BUTTONS */
+.side-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    text-align: center;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* HOVER EFFECT */
+.side-nav a:hover {
+    background: #38bdf8;
+    color: black;
+    transform: scale(1.05);
+}
+html {
+    scroll-behavior: smooth;
+}
