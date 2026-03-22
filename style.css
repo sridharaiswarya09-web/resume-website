@@ -1,0 +1,168 @@
+/* BASE */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+/* MAIN CONTAINER */
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
+/* LEFT PANEL */
+.left {
+    width: 35%;
+    background: linear-gradient(180deg, #0f172a, #1e293b);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* GLOW EFFECT */
+.left::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #38bdf8;
+    filter: blur(120px);
+    top: -50px;
+    left: -50px;
+    opacity: 0.4;
+}
+
+/* FORCE WHITE TEXT ON LEFT */
+.left h1,
+.left h2,
+.left h3,
+.left p :not(.tagline),
+.left a {
+    color: white;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    margin-bottom: 15px;
+}
+
+/* NAME */
+.left h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+/* CONTACT */
+.left p, .left a {
+    font-size: 14px;
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+/* RIGHT PANEL */
+.right {
+    width: 65%;
+    background: #f8fafc;
+    padding: 30px;
+}
+
+/* GLASS CARDS */
+section {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* RIGHT SIDE HEADINGS */
+.right h2 {
+    color: #0f172a;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.right h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #38bdf8;
+    display: block;
+    margin-top: 5px;
+}
+
+.right h3 {
+    color: #334155;
+}
+
+/* TEXT */
+.right p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* SKILL BARS */
+.skill {
+    margin-bottom: 12px;
+}
+
+.skill-name {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.skill-bar {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 6px;
+}
+
+.skill-fill {
+    height: 8px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+}
+
+/* LINKS */
+a:hover {
+    color: #38bdf8;
+}
+
+/* FORCE WHITE TEXT FOR EVERYTHING ON DARK */
+body {
+    color: white !important;
+}
+
+/* KEEP GLASS CARDS TEXT DARK */
+section {
+    color: #0f172a !important;
+}
+.tagline {
+    font-size: 14px;
+    font-weight: 600;
+    color: #38bdf8;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px rgba(56,189,248,0.5);
+}
+.tagline {
+    display: block;
+}
